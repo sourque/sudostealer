@@ -41,6 +41,10 @@ Getting a callback:
 
 ![Example](screenshots/example.png)
 
+```
+This idea was given to me by rewzilla (github.com/rewzilla)
+```
+
 ---
 
 __How does it work?__
@@ -56,17 +60,13 @@ __How does it work?__
 5. Get sent creds through `POST` data with `curl`.
 6. Script deletes itself, removes alias, `exec bash`es.
 
-```
-This idea was given to me by rewzilla (github.com/rewzilla)
-```
-
 ---
 
-If anyone wants to hacktober some stuff, __todo__:
+If anyone wants to _Hacktober_ some stuff, __todo__:
 
 - Handle method input, create new methods for dropping (see comments in script)
-- Sanitize/verify CLI input (getopts)
-- Don't add 50 aliases if the script is run multiple times
-- Fix sudo prompt realness (don't allow CTRL-c to kill sleep-- trap doesn't catch it)
+- Sanitize/verify CLI input (`getopts`)
+- Don't add 50 `alias`es if the script is run multiple times
+- Fix sudo prompt realness (don't allow `CTRL-c` to kill `sleep`-- `trap` doesn't catch it)
   - Pressing enter on a blank password, then immediately CTRL-c shouldn't exit
 - Find a way to force re-sourcing `~/.bashrc` so you don't have to wait for a new terminal
